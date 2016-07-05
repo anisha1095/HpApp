@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hp.hpapp">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+
+    <uses-feature android:name="android:hardware:camera" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/images"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity" />
+        <activity android:name=".CompatibilityActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".LoginResultActivity" />
+        <activity android:name=".ListingActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".IntentDemoActivity" />
+        <activity android:name=".SpinnerActivity" />
+        <activity android:name=".RadioActivity" />
+        <activity android:name=".DealActivity" />
+        <activity android:name=".DealConfirmationActivity" />
+        <activity android:name=".CameraActivity" />
+        <activity android:name=".AlertDialogActivity" />
+        <activity android:name=".ListInDialogActivity" />
+        <activity android:name=".ImageResourceActivity" />
+        <activity android:name=".OptionMenuActivity" />
+        <activity android:name=".SharedPreferencesActivity" />
+        <activity android:name=".SeekBarActivity" />
+        <!--
+ ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity android:name=".ProgressBarActivity" />
+        <activity android:name=".CustomListActivity" />
+        <activity android:name=".SplashActivity" />
+        <activity android:name=".WelcomeActivity" />
+        <activity android:name=".SDcardActivity" />
+        <activity android:name=".DatabaseActivity" />
+        <activity android:name=".DynamicListActivity" />
+        <activity android:name=".BluetoothActivity" />
+        <activity android:name=".OrientationSensorActivity" />
+        <activity android:name=".ProximitySensorActivity" />
+        <activity android:name=".GPSActivity" />
+
+        <receiver
+            android:name=".MyBroadcastReciever1"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>
