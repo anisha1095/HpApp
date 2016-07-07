@@ -15,7 +15,7 @@ public class ListingActivity extends ListActivity
             "CameraActivity","AlertDialogActivity","ListInDialogActivity","ImageResourceActivity","OptionMenuActivity","SharedPreferencesActivity",
             "SeekBarActivity","ProgressBarActivity","CustomListActivity","SplashActivity","SDcardActivity",
             "DatabaseActivity","DynamicListActivity","BluetoothActivity","Bluetooth2Activity","ProximitySensorActivity","OrientationSensorActivity",
-            "GPSActivity","MyBroadcastReciever1","EXIT"};
+            "GPSActivity","MyBroadcastReciever1","ServiceActivity","MusicActivity","WallpaperActivity","WifiActivity","","EXIT"};
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
